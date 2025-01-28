@@ -265,7 +265,7 @@ const bigProjects = {
 };
 
 // Achievement Section
-// Include certificates, talks etc
+// Include certificates, talks etc...
 
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
