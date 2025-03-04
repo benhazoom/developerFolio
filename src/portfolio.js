@@ -34,7 +34,8 @@ const greeting = {
   subTitle: emoji(
     `I'm a young web and softwere engineer from Kiryat-Gat Israel. I love to solve problems, research and learn new things. I'm a self-taught developer and I'm always looking for new challenges.`
   ),
-  resumeLink: "BinyaminHazoom_CV.pdf", // Set to empty to hide the button
+  resumeLink:
+    "https://drive.google.com/file/d/18SCmxQFKgYQFrMLHznbVfBHJBGv27qlH/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -256,6 +257,18 @@ const bigProjects = {
         {
           name: "Visit Website",
           url: "https://binyamin-mern-web-shop.onrender.com/"
+        }
+        //  you can add extra buttons here
+      ]
+    },
+    {
+      image: require("./assets/images/BudgetBuddy.png"),
+      projectName: "Budgeting web platform",
+      projectDesc: `Full stack application for budgeting. (Next.js (App Router), React, TypeScript, MUI, Next.js API Routes, MongoDB (Mongoose), Clerk Authentication)`,
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://budget-buddy-self.vercel.app/"
         }
         //  you can add extra buttons here
       ]

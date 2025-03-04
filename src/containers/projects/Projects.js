@@ -6,12 +6,10 @@ import StyleContext from "../../contexts/StyleContext";
 import Loading from "../../containers/loading/Loading";
 import jsonData from "./profile.json"; // Adjust path if needed
 
-
 export default function Projects() {
   const GithubRepoCard = lazy(() =>
     import("../../components/githubRepoCard/GithubRepoCard")
   );
-
 
   const FailedLoading = () => null;
   const renderLoader = () => <Loading />;
@@ -44,7 +42,9 @@ export default function Projects() {
     return (
       <Suspense fallback={renderLoader()}>
         <div className="main" id="opensource">
-          <h1 className="project-title">Open Source Projects</h1>
+          <h1 className="project-title">
+            Open Source Projects (See websites on 'Big Projects' section)
+          </h1>
           <div className="repo-cards-div-main">
             {repo.map((v, i) => {
               if (!v) {
