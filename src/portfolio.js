@@ -35,7 +35,7 @@ const greeting = {
     `I'm a young web and softwere engineer from Kiryat-Gat Israel. I love to solve problems, research and learn new things. I'm a self-taught developer and I'm always looking for new challenges.`
   ),
   resumeLink:
-    "https://drive.google.com/file/d/18SCmxQFKgYQFrMLHznbVfBHJBGv27qlH/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1xN8E-1vSdGadHAfUN-AiaL1PAODW94MT/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -122,20 +122,12 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-server"
     },
     {
-      skillName: "NestJS",
-      fontAwesomeClassname: "fas fa-server"
-    },
-    {
       skillName: "Java",
       fontAwesomeClassname: "fab fa-java"
     },
     {
       skillName: "JWT",
       fontAwesomeClassname: "fas fa-key"
-    },
-    {
-      skillName: "GraphQL",
-      fontAwesomeClassname: "fas fa-project-diagram"
     },
     //data base
     {
@@ -148,10 +140,6 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "MongoDB",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "Prisma",
       fontAwesomeClassname: "fas fa-database"
     },
     {
@@ -222,13 +210,14 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Automation Engineer",
+      role: "Fullstack and Automation Engineer",
       company: "Orda",
       companylogo: require("./assets/images/orda-logo.png"),
-      date: "",
+      date: "July 2023 - Present",
       desc: ``,
       descBullets: [
-        `Automation Engineer • Automating printing processes, scripting in Java Python and JavaScript`
+        `Automating printing processes, building fullstack applications with automations and integrations.`,
+        `Integrating with AI tools and external services.`
       ]
     }
   ]
@@ -249,6 +238,18 @@ const bigProjects = {
   subtitle: "Some of my project that best represent my skills and experience",
   projects: [
     {
+      image: require("./assets/images/BudgetBuddy.png"),
+      projectName: "Budgeting web platform",
+      projectDesc: `Full stack application for budgeting. (Next.js (App Router), React, TypeScript, MUI, Next.js API Routes, MongoDB (Mongoose), Clerk Authentication)`,
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://budget-buddy-self.vercel.app/"
+        }
+        //  you can add extra buttons here
+      ]
+    },
+    {
       image: require("./assets/images/EcommerceScreen.png"),
       projectName: "Ecommerce web platform",
       projectDesc: `Full stack application for a web eCommerce shop built using the MERN stack (MongoDB, Express, React, Node). With JWT Authentication Stored In An HTTP-Only Cookie. Admin area to manage customers products & orders. Full featured shopping cart with PayPal & credit/debit payments.Product Search, Carousel, Pagination & More.Product Rating & Review System
@@ -257,18 +258,6 @@ const bigProjects = {
         {
           name: "Visit Website",
           url: "https://binyamin-mern-web-shop.onrender.com/"
-        }
-        //  you can add extra buttons here
-      ]
-    },
-    {
-      image: require("./assets/images/BudgetBuddy.png"),
-      projectName: "Budgeting web platform",
-      projectDesc: `Full stack application for budgeting. (Next.js (App Router), React, TypeScript, MUI, Next.js API Routes, MongoDB (Mongoose), Clerk Authentication)`,
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://budget-buddy-self.vercel.app/"
         }
         //  you can add extra buttons here
       ]
@@ -287,55 +276,46 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "MERN From Scratch 2023 | eCommerce Platform Certified by ‘Udemy’",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Fullstack REST applications using MongoDB, Express.js React and Node.js.",
+      image: require("./assets/images/MERN-Certificate.jpg"),
+      imageAlt: "MERN Certification",
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          url: "https://www.udemy.com/certificate/UC-6b13b41b-4a5d-436a-a324-6b5c76179076/"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "Javascript algorithms and data structures v8",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+        "Completed Certifcation from freeCodeCamp for Javascript Algorithms and Data Structures.",
+      image: require("./assets/images/Javascript-Certificate.png"),
+      imageAlt: "Javascript Algorithms and Data Structures Logo",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "Certification",
+          url: "https://www.freecodecamp.org/certification/binyaminhazoom/javascript-algorithms-and-data-structures-v8"
         }
       ]
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "Backend development and apis course",
+      subtitle: "Completed Certifcation from freeCodeCamp for Backend Development and APIs.",
+      image: require("./assets/images/Backend-Certificate.png"),
+      imageAlt: "Backend Development and APIs Logo",
       footerLink: [
-        {name: "Certification", url: ""},
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "Certification",
+          url: "https://www.freecodecamp.org/certification/binyaminhazoom/back-end-development-and-apis"
         }
       ]
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -422,8 +402,8 @@ export {
   educationInfo,
   techStack,
   workExperiences,
-  openSource,
   bigProjects,
+  openSource,
   achievementSection,
   blogSection,
   talkSection,
